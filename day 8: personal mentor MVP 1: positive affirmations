@@ -1,0 +1,60 @@
+print("Welcome to your personal mentor MVP 1: positive affirmations")
+
+MentorName = input("What is your Name? ") 
+print("Welcome " + MentorName)
+
+MentoreTodaysState = int(input("How do you feel on a scale from 1-10, 1 being almost dead and 10 divine bliss? "))
+
+if MentoreTodaysState >= 1 and MentoreTodaysState <= 3:
+    print("You are feeling very low. Don't worry, it is normal. Like everything in life, even this will pass away. Thanks to the following questions, I will help you to overcome your weakness and enable you to be more powerful.")
+elif MentoreTodaysState > 3 and MentoreTodaysState < 7:
+    print("You are feeling normal. Which is, of course, fine. Even this, like everything in life, will pass away. Thanks to the following questions, I will help you to overcome your residual weaknesses and enable you to be more powerful.")
+else:
+    print("You are feeling divine, but even this, like everything in life, will pass away. Thanks to the following questions, I will help you to overcome your residual weaknesses and enable you to be more powerful.")
+
+MentorGoal = input("What is your goal? ") 
+print("In order for us to give you more strength, we will also use some IKIGAI:")
+
+MentorLove = input("What do you love to do? What would you do if you didn't need to work for money anymore? Which tasks make you feel good and in flow? ") 
+MentorGoodAt = input("What are you good at? What did others tell you that you are good at? Where did you have success? When did the tasks feel effortless? ") 
+MentorPaidFor = input("How can you be paid for, to do what you would like to do? Any free courses or paid apprenticeships? ") 
+MentoreService = input("What do you think should be fixed in the world? What disturbs you the most? ") 
+
+print("This will give us some idea. You can go deeper on your own, or book a consulting with me.")
+
+MentorIKIGAI = input("So what do you think, how can you enter a career in which you already do what you would like to experience (which may change again haha), that possibly makes you feel good, you can become better at, be paid for, and the world needs? ") 
+
+print("How are you feeling right now? Did you notice that when you were concentrated, you had fewer opportunities to react with craving and aversion to sensations? Of course, this is the whole secret behind magic and mysticism as well as wellbeing and success. Throw stronger and stronger concentration abilities towards the desired outcome. But how? You may ask.")
+
+# Generating daily affirmation and visualization
+affirmation = f"""
+Daily Affirmation and Visualization:
+
+Dear {MentorName},
+
+Today, I am focused and determined to achieve my goal of {MentorGoal}. I am empowered by my passion for {MentorLove}, and I recognize my talents in {MentorGoodAt}. I am paving the path to be compensated for my skills through {MentorPaidFor}, and I am dedicated to addressing the needs of the world by focusing on {MentoreService}.
+
+Every day, I visualize myself as a resilient overman, overcoming challenges with grace and strength. I see myself succeeding in my career, doing what I love, improving my skills, earning a good living, and making a positive impact on the world.
+
+I am grateful for my journey and trust in the process. I embrace each moment with mindfulness and concentration, knowing that my focused efforts will lead me to my dreams. I am powerful, capable, and unstoppable.
+
+With each breath, I center myself and renew my commitment to my vision. I see myself living my IKIGAI, where my passions, talents, and contributions align harmoniously. I am on my way to becoming the best version of myself.
+
+Remember, every small step brings me closer to my dream.
+
+With resilience and determination,
+{MentorName}
+"""
+
+print(affirmation)
+
+# Recommending daily reading
+print("\nDaily Reading Recommendation:")
+print("1. 'Man's Search for Meaning' by Viktor Frankl")
+print("2. 'The Power of Now' by Eckhart Tolle")
+print("3. 'Ikigai: The Japanese Secret to a Long and Happy Life' by Héctor García and Francesc Miralles")
+print("4. 'The 7 Habits of Highly Effective People' by Stephen R. Covey")
+print("5. 'Atomic Habits' by James Clear")
+
+# Encouraging visualization practice
+print("\nRemember to take a few minutes every day to visualize your success and reinforce your affirmations. Close your eyes, take deep breaths, and imagine yourself achieving your goals with clarity and confidence.")"
