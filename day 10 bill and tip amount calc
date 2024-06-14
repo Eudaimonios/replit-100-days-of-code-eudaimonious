@@ -1,0 +1,22 @@
+try:
+    myBill = float(input("What was the Bill? "))
+    numberOfPeople = int(input("How many people? "))
+    if numberOfPeople <= 0:
+        raise ValueError("Number of people must be greater than zero.")
+except ValueError as e:
+    print(f"Invalid input: {e}")
+    exit(1)
+
+answer = round(myBill / numberOfPeople, 2)
+print(f"You all owe {answer}")
+
+try:
+    myTipPerc = int(input("How many percent do you want to tip? "))
+except ValueError:
+    print("Invalid input: Tip percentage must be an integer.")
+    exit(1)
+
+myTipAmount = round((myTipPerc / 100) * answer, 2)
+totalAmount = round(answer + myTipAmount, 2)
+print(f"The tip amount for {myTipPerc}% is {myTipAmount}")
+print(f"Each person needs to pay a total of {totalAmount}")
